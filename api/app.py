@@ -20,6 +20,11 @@ def test_response():
     response.headers['Access-Control-Allow-Origin'] = 'http://localhost:3000'
     return response
 
-@app.route('/hello',methods=['GET'])
-def hello():
-    return 'Hello World'
+@app.route('/hello')
+def privet():
+    return 'hello bob'
+
+#Testing to check if it works
+@app.route('/test')
+def test():
+    return "Works!"

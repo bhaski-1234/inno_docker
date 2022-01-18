@@ -6,7 +6,7 @@ services:
    - docker
 
 before_install:
-   - docker build -t bhaskar -f Dockerfile.dev .
+   - docker build -t stephengrider/docker-react -f Dockerfile.dev .
 
-
-    
+script:
+   - docker run stephengrider/docker-react stephengrider/docker-react
