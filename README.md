@@ -1,0 +1,5 @@
+docker + nginx + react + flask
+    
+
+
+
