@@ -4,7 +4,7 @@ services:
   api:
     build: 
       dockerfile: Dockerfile.dev
-      context: ./api
+      context: .
     command: ["flask", "run", "--host=0.0.0.0"]
     volumes:
       - ./api:/backend
